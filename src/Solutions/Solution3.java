@@ -1,5 +1,33 @@
 package Solutions;
 
+
+
+/*
+* Question:
+*
+* Consider a integer stack handler that does operations on a string which contains commands written as POP, +, -,
+* <a number> and DUP. Consider the following input and output and gives the top element of the stack as output.
+* Input: "13 10 DUP + - 14 POP 12 10"
+* Output: 10
+* Calculation:
+*
+* Input String: "13 10 DUP + - 14 POP 12 10"
+*    -------------------------------
+*  | Input to stack      | Stack    |
+*  | -------------------------------
+*  | 13                  | 13       |
+*  | 10                  | 13 10    |
+*  | DUP                 | 13 10 10 |
+*  | +                   | 13 20    |
+*  | -                   | 7        |
+*  | 14                  | 33 14    |
+*  | POP                 | 33       |
+*  | 12                  | 33 12    |
+*  | 10                  | 33 12 10 |
+*  ----------------------------------
+*/
+
+
 import java.util.Stack;
 
 /**

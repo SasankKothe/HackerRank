@@ -1,11 +1,26 @@
 package Solutions;
 
-import sun.text.resources.lt.CollationData_lt;
-
-import java.lang.reflect.Array;
+/*
+*
+* Question:
+*
+* A paragraph handler does divide a paragraph into different sentences on . ? and ! as delimiters and outputs a number
+* which is the number of words in largest sentence. Write a efficient code for this handler.
+*
+* Input: "I am Sasank? And I am a hit Coder. Coding! is fun fun. and fun."
+* Output: 6
+*
+* Calculation:
+* Following are the sentences obtained after analysing:
+* 1. I am Sasank --> (3 words)
+* 2. And I am a hit coder --> (6 words)
+* 3. Coding --> (1 word)
+* 4. is fun fun --> (3 words)
+* 5. and fun --> (2 words)
+*
+* */
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Hashtable;
 
 /**
  * Created by sasank on 10.02.19.
